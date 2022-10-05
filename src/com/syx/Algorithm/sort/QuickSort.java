@@ -5,8 +5,8 @@ import java.util.Random;
 
 public class QuickSort {
     public static void main(String[] args) {
-        int[] nums=new int[]{5,2,3,1};
-//        shuffle(nums);
+        int[] nums=new int[]{1,32,2,54,65,7,67,678,5,3,423,5};
+        shuffle(nums);
         quickSort(nums,0,nums.length-1);
     }
 
@@ -17,6 +17,7 @@ public class QuickSort {
         quickSort(nums,lo,p-1);
         quickSort(nums,p+1,hi);
     }
+
     static int partition(int[] nums,int lo,int hi){
         int pivot=nums[lo];
         int i=hi,j=hi;
